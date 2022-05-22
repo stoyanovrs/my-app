@@ -41,14 +41,4 @@
 	</p>
 </div>
 
-<style lang="scss">
-	.content {
-		width: 100%;
-		max-width: var(--column-width);
-		margin: var(--column-margin-top) auto 0 auto;
-		p {
-			color: rgb(255, 0, 247);
-		}
-	}
 
-</style>
