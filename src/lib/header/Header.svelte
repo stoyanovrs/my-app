@@ -32,11 +32,11 @@
 					<li class:active={$page.url.pathname === '/todo'}>
 						<a sveltekit:prefetch href="/todo">ToDo</a>
 					</li>
-					<li class:active={$page.url.pathname === '/features/calendar'}>
-						<a sveltekit:prefetch href="/features/calendar">Calendar</a>
+					<li class:active={$page.url.pathname === '/calendar'}>
+						<a sveltekit:prefetch href="/calendar">Calendar</a>
 					</li>
-					<li class:active={$page.url.pathname === '/features/reminders'}>
-						<a sveltekit:prefetch href="/features/reminders">Reminders</a>
+					<li class:active={$page.url.pathname === '/reminders'}>
+						<a sveltekit:prefetch href="/reminders">Reminders</a>
 					</li>
 				</ul>
 			</li>
