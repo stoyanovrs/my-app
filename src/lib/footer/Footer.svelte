@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/header/svelte-logo.svg';
+	
 </script>
 
 <footer>

@@ -12,49 +12,56 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
+	<div class="welcome">
+		<picture>
+			<source srcset="/images/image-hero-mobile.webp" type="image/webp" />
+			<img src="/images/image-hero-mobile.png" alt="Welcome" />
+		</picture>
+	</div>
+	<div class="headline">
+		<h1>Make remote work</h1>
+		<p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+		<button>Learn more</button>
+	</div>
 </section>
 
-<style>
+<style lang="scss">
+	
 	section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
+		
+		.welcome {
 		position: relative;
 		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+		height: auto;
+		padding: 0 0 1rem 0;
+		}
+
+		.welcome img {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		.headline {
+			display: flex;
+			flex: 1;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			p {
+			text-align: center;
+			margin: 0 0.5rem 2rem 0;
+			font-size: 20px;
+			font-weight: 500;
+			}
+		}
 	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+	
+
+	
 </style>
